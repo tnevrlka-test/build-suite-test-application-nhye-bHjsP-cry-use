@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-simple-build-ukrv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-tplm-tenant/build-suite-test-application-nhye/test-simple-build-ukrv@sha256:5993e6e9f6f8adedb31cba1c12678065d1d8806e426bb6ac94f28b1f2cad7bb6
+        name: my-nginx
+        resources: {}
+status: {}
