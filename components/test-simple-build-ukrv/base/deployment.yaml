@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-simple-build-ukrv
     spec:
       containers:
-      - image: hello-world:latest
+      - image: quay.io/tnevrlka-test/build-e2e-tplm-tenant/build-suite-test-application-nhye/test-simple-build-ukrv@sha256:5993e6e9f6f8adedb31cba1c12678065d1d8806e426bb6ac94f28b1f2cad7bb6
         name: my-nginx
         ports:
         - containerPort: 8080
